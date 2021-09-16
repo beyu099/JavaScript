@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean logic Exercise 2</title>
+</head>
+<body>
+    <p style="background-color:bisque; color: black; padding: 10px; width: 20%;">
+        let isLearning = true;
+        <br>
+if(isLearning){
+    <br>
+    console.log("Keep it up!");
+    <br>
+} else {
+    <br>
+    console.log("Pretty sure you are learning....");
+}
+    </p>
+    <p> What should the above code console.log?
+        <strong>
+            Keep it up!
+        </strong>
+    </p>
+    <p> Why do we not need to specify if(isLearning === true)? Why does if(isLearning) work on its own?
+        <strong>
+            What I understand is that, this occur because true is a truthy value and Javascript will look for truthy statement. It's still not very clear why it does that.
+        </strong>
+    </p>
+    <p style="background-color:bisque; color: black; padding: 10px; width: 20%;">
+        let firstvariable;
+        <br>
+        let secondvariable = "";
+        <br>
+        let thirdvariable = 1;
+        <br>
+        let secretMessage = "Shh!";
+        <br>
+
+        if(firstvariable){
+            <br>
+    console.log("first");
+    <br>
+        } else if(firstvariable || secondvariable){
+            <br>
+    console.log("second");
+    <br>
+        } else if(firstvariable || thirdvariable){
+            <br>
+    console.log("third");
+    <br>
+        } else {
+            <br>
+    console.log("fourth");
+        }
+    </p>
+    <p> What should the above code console.log? Why?
+        <strong>
+            The code will console "third" because the third statement is truthy.
+        </strong>
+    </p>
+    <p> What is the value of firstvariable when it is initialized?
+        <strong>
+            It is undefined because nothing was assigned to it.
+        </strong>
+    </p>
+    <p> Is the value of firstvariable a "truthy" value? Why?
+        <strong>
+            No, It is falsy. The value of firstvariable is falsy because nothing was assignned to it.
+        </strong>
+    </p> 
+    <p> Is the value of secondvariable a "truthy" value? Why?
+        <strong>
+            No. Javascript treats empty strings as falsy.
+        </strong>
+    </p>
+    <p> Is the value of thirdvariable a "truthy" value? Why?
+        <strong>
+           Yes, because Javascript treats numbers (except 0) as truthy. 
+        </strong>
+    </p>
+</body>
+</html>
